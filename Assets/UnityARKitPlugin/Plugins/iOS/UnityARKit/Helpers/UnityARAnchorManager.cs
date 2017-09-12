@@ -20,6 +20,12 @@ namespace UnityEngine.XR.iOS
 
 		}
 
+		public void StopAnchor() {
+			UnityARSessionNativeInterface.ARAnchorAddedEvent -= AddAnchor;
+			UnityARSessionNativeInterface.ARAnchorUpdatedEvent -= UpdateAnchor;
+			UnityARSessionNativeInterface.ARAnchorRemovedEvent -= RemoveAnchor;
+		}
+
 
 		public void AddAnchor(ARPlaneAnchor arPlaneAnchor)
 		{
