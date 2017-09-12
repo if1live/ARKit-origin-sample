@@ -15,6 +15,8 @@ public class UnityARCameraManager : MonoBehaviour {
 	public bool getPointCloud = true;
 	public bool enableLightEstimation = true;
 
+	public UnityARSessionNativeInterface Session { get { return m_session; } }
+
 	// Use this for initialization
 	void Start () {
 

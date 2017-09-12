@@ -8,6 +8,12 @@ namespace UnityEngine.XR.iOS
 		public GameObject planePrefab;
         private UnityARAnchorManager unityARAnchorManager;
 
+        // to access surface informations
+        public UnityARAnchorManager ARAnchorManager
+        {
+            get { return unityARAnchorManager; }
+        }
+
 		// Use this for initialization
 		void Start () {
             unityARAnchorManager = new UnityARAnchorManager();
